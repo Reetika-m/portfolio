@@ -1,0 +1,103 @@
+#intro{
+
+    height: calc(100vh - 5rem);
+    
+    width: 100vw;
+    
+    max-width: 75rem;
+    
+    margin: 0 auto;
+    
+    overflow: hidden;
+    
+    position: relative;
+}
+    .introContent{
+    
+    height: 100vh;
+    
+    width: 100vw;
+    
+    padding: 2rem;
+
+  font-size: 3rem;
+    
+    font-weight: 700; 
+    display: flex;
+    
+    flex-direction:column;
+    justify-content:center;
+}
+.hello{
+    
+font-size: 1.75rem;
+font-weight: 100;
+
+}
+.introName{
+    color: yellow;
+}
+.introPara{
+font-size: medium;
+font-family: 300;
+letter-spacing: 1px;
+
+}
+.btn2{
+background-color: white;
+margin: 1rem 0;
+padding: 0.65rem 1.5rem;
+border: none;
+border-radius: 2rem;
+font-weight: bolder;
+}
+.btn2:hover{
+
+    background: yellow;
+
+}
+.btnImg2{
+object-fit: cover;
+margin: 0 0.25rem;
+height: 1rem;
+}
+.logo2{
+    position: absolute;
+    top: -4rem;
+    right: 6em;
+    z-index: -1;
+    object-fit: cover;
+    height: 20em;
+    padding: 1.5em;
+    margin-top: 12rem;
+}
+ @media (prefers-reduced-motion: no-preference) {
+    .logo2 {
+      animation: logo2-spin infinite 20s linear;
+      
+    }
+  }
+  
+  @keyframes logo2-spin { 
+     from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @media screen and (max-width:840px) {
+.logo2{
+    height: 16em;
+    opacity: 0.3;
+}
+.introContent{
+font-size: 10vw;
+}
+.hello{
+    font-size: 4.5vw;
+}
+
+}
+
+  
